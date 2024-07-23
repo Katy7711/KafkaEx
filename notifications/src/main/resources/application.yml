@@ -1,0 +1,10 @@
+application:
+  kafka:
+    topic_cons: "sent_orders"
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: "127.0.0.1:9092"
+      client-id: "notification-consumer"
+server:
+  port: 8002

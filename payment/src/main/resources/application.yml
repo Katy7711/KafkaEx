@@ -1,0 +1,16 @@
+application:
+  kafka:
+    topic_cons: "new_orders"
+    topic_prod: "payed_orders"
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: "127.0.0.1:9092"
+      client-id: "payment-producer"
+      acks: 1
+    consumer:
+      bootstrap-servers: "127.0.0.1:9092"
+
+server:
+  port: 8001
